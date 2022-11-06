@@ -14,13 +14,9 @@ import { Sendmsg } from './src/send';
     const responseLogin = await login.initLogin();
 
     //send sms
-    const sms = new Sendmsg('09073248135', 'Hello Jeb');
+    const sms = new Sendmsg('09000000123', 'Hello World'); // (Mobile number , MessageBody)
     const smsReponse = await sms.sendSms();
     console.log(smsReponse)
-
-    // if (responseLogin) {
-
-    // }
 
 
 })()
