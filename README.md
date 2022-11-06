@@ -1,7 +1,12 @@
 # SMS GATEWAY
 ## For Globe at Home Router
 
-##To Get Started 
+Exact model (ZLT S10G)
+
+![download](https://user-images.githubusercontent.com/46442119/200166720-1779f886-9e47-406c-997b-6fb972b0d812.jpg)
+
+
+## To Get Started 
 
 Make sure to have axios npm installed
 
@@ -22,3 +27,6 @@ and run this code after importing everything
         console.log(smsReponse)
         
      })()
+
+
+The purpose of this is to initially create an SMS GATEWAY for making api using only Globe at Home modem without spending much more expensive equipment for sending sms
