@@ -9,6 +9,8 @@ To test, you need to connect to globe at home wifi
 
 and run this code after importing everything
 
+
+//Example
 (async () => {
 
     //login
