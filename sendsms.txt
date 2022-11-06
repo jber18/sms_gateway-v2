@@ -1,0 +1,74 @@
+###LOGIN
+POST http://192.168.254.254/goform/goform_set_cmd_process HTTP/1.1
+Host: 192.168.254.254
+Proxy-Connection: keep-alive
+Content-Length: 73
+Accept: application/json, text/javascript, */*; q=0.01
+DNT: 1
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Linux; Android 12; SM-A325F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Origin: http://192.168.254.254
+Referer: http://192.168.254.254/index.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+URLEncoded form
+  
+isTest:   false
+goformId: LOGIN
+username: dXNlcg==
+password: QGwwM2UxdDM=
+
+
+
+##SEND SMS
+POST http://192.168.254.254/goform/goform_set_cmd_process HTTP/1.1
+Host: 192.168.254.254
+Proxy-Connection: keep-alive
+Content-Length: 170
+Accept: application/json, text/javascript, */*; q=0.01
+DNT: 1
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Linux; Android 12; SM-A325F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Origin: http://192.168.254.254
+Referer: http://192.168.254.254/index.html?t=
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: pageForward=home
+URLEncoded form
+  
+isTest:      false
+goformId:    SEND_SMS
+notCallback: true
+Number:      09073248135
+sms_time:    22;11;04;20;40;21;+8
+MessageBody: 004E0061006B0075
+ID:          -1
+encode_type: GSM7_default
+
+
+
+
+##SMS READ
+GET http://192.168.254.254/goform/goform_get_cmd_process?isTest=false&cmd=sms_data_total&page=0&data_per_page=5&mem_store=1&tags=1&order_by=order+by+id+desc&_=1667565627092 HTTP/1.1
+Host: 192.168.254.254
+Proxy-Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+DNT: 1
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Linux; Android 12; SM-A325F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Mobile Safari/537.36
+Referer: http://192.168.254.254/index.html?t=
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: pageForward=home
+Query
+  
+isTest:        false
+cmd:           sms_data_total
+page:          0
+data_per_page: 5
+mem_store:     1
+tags:          1
+order_by:      order by id desc
+_:             1667565627092
