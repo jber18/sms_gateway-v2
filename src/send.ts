@@ -16,13 +16,13 @@ export class Sendmsg {
         const _msgContent = msgContent.length > 0 ? `00${msgContent.slice(0, msgContent.length - 2)}` : ''
 
         //Creating timestamp
-        const dateNow = new Date();
-        const year = dateNow.getFullYear();
-        const day = dateNow.getDate();
-        const month = dateNow.getMonth();
-        const hour = dateNow.getHours();
-        const minute = dateNow.getMinutes();
-        const seconds = dateNow.getSeconds();
+        const dateNow:Date = new Date();
+        const year:number = dateNow.getFullYear();
+        const day:number = dateNow.getDate();
+        const month:number = dateNow.getMonth();
+        const hour:number = dateNow.getHours();
+        const minute:number = dateNow.getMinutes();
+        const seconds:number = dateNow.getSeconds();
         //year;month;day;hour;minute;seconds
         const timestamp: string = `${year.toString().slice(2)};${month < 10 ? `0${month + 1}` : month + 1};${day < 10 ? `0${day}` : day};${hour < 10 ? `0${hour}` : hour};${minute < 10 ? `0${minute}` : minute};${seconds < 10 ? `0${seconds}` : seconds};+8`
 
@@ -39,8 +39,8 @@ export class Sendmsg {
         }
 
         //getting bytesize for content length
-        const mobileByteSize = Buffer.byteLength(this.mobile, 'utf8')
-        const bodyByteSize = Buffer.byteLength(_msgContent, 'utf8')
+        const mobileByteSize:number = Buffer.byteLength(this.mobile, 'utf8')
+        const bodyByteSize:number = Buffer.byteLength(_msgContent, 'utf8')
         // console.log((mobileByteSize + bodyByteSize + 231) - 88)
         const getContent_length = (mobileByteSize + bodyByteSize + 231) - 88
 

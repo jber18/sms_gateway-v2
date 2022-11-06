@@ -13,8 +13,8 @@ export class LoginRouter {
 
     async initLogin() {
         var responseData;
-        const user = Buffer.from(this.username, 'utf8').toString('base64');
-        const pass = Buffer.from(this.password, 'utf8').toString('base64');
+        const user:string = Buffer.from(this.username, 'utf8').toString('base64');
+        const pass:string = Buffer.from(this.password, 'utf8').toString('base64');
 
         //declare headers and paramters
         const headers: object = {

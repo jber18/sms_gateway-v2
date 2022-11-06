@@ -1,9 +1,5 @@
-import { Buffer } from 'node:buffer';
-import axios from 'axios';
-import querystring from 'node:querystring';
 import { LoginRouter } from './src/login';
 import { Sendmsg } from './src/send';
-// loginRouter("dXNlcg==", "QGwwM2UxdDM=")
 
 
 
@@ -12,9 +8,10 @@ import { Sendmsg } from './src/send';
     //login
     const login = new LoginRouter('user', '@l03e1t3')
     const responseLogin = await login.initLogin();
+    console.log(responseLogin)//Reponds boolean if login success
 
     //send sms
-    const sms = new Sendmsg('09000000123', 'Hello World'); // (Mobile number , MessageBody)
+    const sms = new Sendmsg('09000000123', 'Hi World again!'); // (Mobile number , MessageBody)
     const smsReponse = await sms.sendSms();
     console.log(smsReponse)
 
