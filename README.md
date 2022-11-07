@@ -14,7 +14,7 @@ To test, you need to connect to globe at home wifi
 
 and run this code after importing everything
 
-
+```js
     (async () => {
 
         //login
@@ -27,6 +27,7 @@ and run this code after importing everything
         console.log(smsReponse)
 
     })()
+```
 
 
 The purpose of this is to initially create an SMS GATEWAY for making api using only Globe at Home modem without spending much more expensive equipment for sending sms
