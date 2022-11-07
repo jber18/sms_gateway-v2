@@ -17,16 +17,16 @@ and run this code after importing everything
 
     (async () => {
 
-        //login
-        const login = new LoginRouter('user', '@l03e1t3') //default password works!
-        const responseLogin = await login.initLogin();
+    //login
+    const login = new LoginRouter('user', '@l03e1t3') //default password works!
+    const responseLogin = await login.initLogin();
 
-        //send sms
-        const sms = new Sendmsg('09000000123', 'Hello user');
-        const smsReponse = await sms.sendSms();
-        console.log(smsReponse)
-        
-     })()
+    //send sms
+    const sms = new Sendmsg('09000000123', 'Hello user');
+    const smsReponse = await sms.sendSms();
+    console.log(smsReponse)
+
+    })()
 
 
 The purpose of this is to initially create an SMS GATEWAY for making api using only Globe at Home modem without spending much more expensive equipment for sending sms
