@@ -29,5 +29,9 @@ and run this code after importing everything
     })()
 ```
 
+Problem fixed from recent commits:
+    The router were getting full of sms messages and unable to send,
+    so by creating clean history, it is usefull to clear history after sending message.
+
 
 The purpose of this is to initially create an SMS GATEWAY for making api using only Globe at Home modem without spending much more expensive equipment for sending sms
